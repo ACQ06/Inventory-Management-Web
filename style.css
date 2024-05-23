@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: calc(12vw + 30px) 1fr;
+    grid-template-areas: "side main";
+}
+
+.sidebar {
+    background-color: #0077b6;
+    font-size: 1vw;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    display: block;
+}
+
+.sidebar li {
+    margin-bottom: 2vh;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.sidebar li :hover {
+    color: #10123e;
+    background-color: #fbfefe;
+    border-radius: 0.5rem;
+}
+
+.sidebar .nav-section {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.sidebar .sidebar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fbfefe;
+    padding: 0.75rem 0.5rem;
+}
+
+.user {
+    display: flex;
+    color: #fbfefe;
+    align-items: center;
+    background-color: #005989;
+    padding: 20px;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.user .user-details {
+    margin: 0px 10px;
+    width: 80%;
+}
+
+.user-details .user-role {
+    font-size: 0.8vw;
+}
+
+.user-logout {
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.material-symbols-outlined {
+    margin-right: 1rem;
+    font-size: 1vw;
+}
+
+.main-content {
+    background-color: #e6f1f8;
+    font-size: 2vw;
+    padding: 20px;
+}
